@@ -29,8 +29,7 @@ function DetailsScreen(props) {
       <View style={{ height: 500, width: "100%" }}>
         <Pager
           itemId={item.productName}
-          mainImage={item.mainImage}
-          otherImages={[...item.otherImages]}
+          images={[item.mainImage, ...item.otherImages]}
         />
       </View>
       <Button title="Close" onPress={() => props.navigation.goBack()}></Button>
